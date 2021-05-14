@@ -14,7 +14,10 @@ hideErrorMsg();
 const like = node => {
   mimicServerCall().then(() => {
     node.innerText = FULL_HEART;
-    node.classList.add("activated-heart")
+    node.classList.add("activated-heart").catch(err => {
+      toggleErrorModal();
+      window.setTimeout(toggleErrorModal, 3000);
+    });
   })
 }
 
