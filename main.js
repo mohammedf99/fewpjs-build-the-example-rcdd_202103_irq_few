@@ -14,7 +14,7 @@ hideErrorMsg();
 const like = node => {
   mimicServerCall().then(() => {
     node.innerText = FULL_HEART;
-    node.classList.add("")
+    node.classList.add("activated-heart")
   })
 }
 
