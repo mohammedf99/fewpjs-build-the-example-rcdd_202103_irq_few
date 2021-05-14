@@ -13,7 +13,7 @@ hideErrorMsg();
 
 const like = node => {
   mimicServerCall().then(() => {
-    
+    node.innerText = 
   })
 }
 
