@@ -12,7 +12,9 @@ const hideErrorMsg = () => {
 hideErrorMsg();
 
 const like = node => {
-  mimicServerCall().then()
+  mimicServerCall().then(() => {
+    
+  })
 }
 
 window.addEventListener("click", e => {
