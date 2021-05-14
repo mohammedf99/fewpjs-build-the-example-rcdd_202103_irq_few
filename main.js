@@ -9,6 +9,10 @@ const hideErrorMsg = () => {
   errorModal.classList.add("hidden");
 }
 
+hideErrorMsg();
+
+
+
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
