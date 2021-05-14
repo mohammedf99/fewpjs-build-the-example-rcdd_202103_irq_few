@@ -16,7 +16,7 @@ const like = node => {
     node.innerText = FULL_HEART;
     node.classList.add("activated-heart").catch(err => {
       toggleErrorModal();
-      window.setTimeout(toggleErrorModal, 3000);
+      window.setTimeout(hideErrorMsg, 3000);
     });
   })
 }
