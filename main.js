@@ -12,7 +12,7 @@ const hideErrorMsg = () => {
 hideErrorMsg();
 
 window.addEventListener("click", e => {
-  if(e.target.textContent === "")
+  if(e.target.textContent === EMPTY_HEART)
 })
 
 
