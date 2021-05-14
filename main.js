@@ -11,7 +11,7 @@ const hideErrorMsg = () => {
 
 hideErrorMsg();
 
-
+window.addEventListener("click", )
 
 
 //------------------------------------------------------------------------------
