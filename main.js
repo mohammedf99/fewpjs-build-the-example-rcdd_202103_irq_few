@@ -1,10 +1,30 @@
+
 // Defining text characters for the empty and full hearts for you to use later.
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
+const hideErrorMsg = () => {
+  const errorModal = document.getElementById("modal");
+  errorModal.classList.add("hidden");
+}
 
+hideErrorMsg();
+
+const like = node => {
+  mimicServerCall().then(() => {
+    node.innerText = FULL_HEART;
+    node.classList.add("activated-heart").catch(err => {
+      hideErrorMsg();
+      window.setTimeout(hideErrorMsg, 3000);
+    });
+  })
+}
+
+window.addEventListener("click", e => {
+  if(e.target.textContent === EMPTY_HEART) like(e.target);
+})
 
 
 //------------------------------------------------------------------------------
